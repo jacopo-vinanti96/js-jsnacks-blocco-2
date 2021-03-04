@@ -3,8 +3,10 @@ var nomi = ["Gianluca", "Sergio", "Giuseppe", "Franco", "Gianni", "Alfio", "Arma
 for ( var i = 0; i < 3; i++ ) {
   index = Math.floor( Math.random() * 10 );
   nomiRandom[i] = nomi[index];
+  nomi.pop(nomi[index]);
   index = Math.floor( Math.random() * 10 );
   nomiRandom[i] += " " + cognomi[index];
+  cognomi.pop(cognomi[index]);
 }
 
 console.log(nomiRandom);
